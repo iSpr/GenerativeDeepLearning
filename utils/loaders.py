@@ -231,7 +231,7 @@ def load_cifar(label, num):
     y_data = np.concatenate([y_train[train_mask], y_test[test_mask]])
 
     x_data = (x_data.astype('float32') - 127.5) / 127.5
- 
+
     return (x_data, y_data)
 
 
